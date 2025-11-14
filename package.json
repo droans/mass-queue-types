@@ -43,7 +43,7 @@
   },
   "scripts": {
     "build": "yarn rollup",
-    "prettier": "prettier ./src --write",
+    "prettier": "prettier ./packages --write",
     "lint": "eslint packages/**/*.ts --max-warnings 0 --no-warn-ignored",
     "full": "echo 'Generating TOC' && yarn docs && echo 'Running Prettier' && yarn prettier && echo 'Linting' && yarn lint",
     "docs": "doctoc ./README.md --maxlevel 2"
