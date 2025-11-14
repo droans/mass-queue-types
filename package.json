@@ -3,7 +3,7 @@
   "description": "Custom Types and Interfaces for Music Assistant Queue Actions",
   "repository": "https://github.com/droans/mass-queue-types",
   "author": "Michael Carroll",
-  "version": "0.1.0",
+  "version": "0.7.0",
   "module": "mass-queue-types.js",
   "keywords": [
     "home-assistant",
