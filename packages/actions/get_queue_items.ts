@@ -13,14 +13,14 @@ export interface queueItem {
   show_artist_name: boolean;
   show_move_up_next: boolean;
   favorite: boolean;
-};
+}
 
 export type queueItems = queueItem[];
 
 type getQueueItemsPartialResponse = Record<string, queueItems>;
 
 export interface getQueueItemsServiceResponse {
-  response: getQueueItemsPartialResponse
+  response: getQueueItemsPartialResponse;
 }
 
 export interface getQueueItemsPartialSchema {
@@ -31,7 +31,8 @@ export interface getQueueItemsPartialSchema {
   offset?: number;
 }
 
-export interface getQueueItemsServiceSchema extends baseMassQueueServiceWithResponseSchema {
-  service: "get_queue_items",
-  service_data: getQueueItemsPartialSchema,
+export interface getQueueItemsServiceSchema
+  extends baseMassQueueServiceWithResponseSchema {
+  service: "get_queue_items";
+  service_data: getQueueItemsPartialSchema;
 }

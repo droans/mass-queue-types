@@ -1,10 +1,11 @@
 export interface baseMassQueueServiceSchema {
-  type: "call_service",
-  domain: "mass_queue",
-  service: string
+  type: "call_service";
+  domain: "mass_queue";
+  service: string;
 }
 
-export interface baseMassQueueServiceWithResponseSchema extends baseMassQueueServiceSchema {
+export interface baseMassQueueServiceWithResponseSchema
+  extends baseMassQueueServiceSchema {
   return_response: true;
 }
 

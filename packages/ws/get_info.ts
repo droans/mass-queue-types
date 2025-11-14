@@ -27,6 +27,6 @@ export interface getInfoWSResponseSchema {
       websocket: string;
     };
   };
-  synced_to: string|null
+  synced_to: string | null;
   type: string;
 }

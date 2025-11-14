@@ -5,7 +5,8 @@ export interface setGroupVolumePartialSchema {
   volume_level: number;
 }
 
-export interface setGroupVolumeServiceSchema extends baseMassQueueServiceSchema {
-  service: "set_group_volume",
-  service_data: setGroupVolumePartialSchema,
+export interface setGroupVolumeServiceSchema
+  extends baseMassQueueServiceSchema {
+  service: "set_group_volume";
+  service_data: setGroupVolumePartialSchema;
 }

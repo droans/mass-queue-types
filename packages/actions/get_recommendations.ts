@@ -34,7 +34,8 @@ export interface getRecommendationsPartialSchema {
   entity: string;
 }
 
-export interface getRecommendationsServiceSchema extends baseMassQueueServiceWithResponseSchema {
-  service: "get_recommendations",
-  service_data: getRecommendationsPartialSchema,
+export interface getRecommendationsServiceSchema
+  extends baseMassQueueServiceWithResponseSchema {
+  service: "get_recommendations";
+  service_data: getRecommendationsPartialSchema;
 }

@@ -4,7 +4,8 @@ export interface unfavoriteCurrentItemPartialSchema {
   entity: string;
 }
 
-export interface unfavoriteCurrentItemServiceSchema extends baseMassQueueServiceSchema {
-  service: "unfavorite_current_item",
-  service_data: unfavoriteCurrentItemPartialSchema,
+export interface unfavoriteCurrentItemServiceSchema
+  extends baseMassQueueServiceSchema {
+  service: "unfavorite_current_item";
+  service_data: unfavoriteCurrentItemPartialSchema;
 }
