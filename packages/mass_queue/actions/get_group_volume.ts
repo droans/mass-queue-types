@@ -5,7 +5,7 @@ export interface getGroupVolumePartialServiceResponse {
 }
 
 export interface getGroupVolumeServiceResponse {
-  response: getGroupVolumePartialSchema;
+  response: getGroupVolumePartialServiceResponse;
 }
 
 export interface getGroupVolumePartialSchema {
