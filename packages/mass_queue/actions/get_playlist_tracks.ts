@@ -27,6 +27,6 @@ export interface getPlaylistTracksPartialSchema {
 
 export interface getPlaylistTracksServiceSchema
   extends baseMassQueueServiceWithResponseSchema {
-  service: "get_playlist_Tracks";
+  service: "get_playlist_tracks";
   service_data: getPlaylistTracksPartialSchema;
 }
