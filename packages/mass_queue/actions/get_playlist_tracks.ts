@@ -12,11 +12,9 @@ export interface playlistTrack {
 
 export type playlistTracks = playlistTrack[];
 
-type getPlaylistTracksPartialResponse = Record<string, playlistTracks>;
-
 export interface getPlaylistTracksServiceResponse {
   response: {
-    tracks: getPlaylistTracksPartialResponse
+    tracks: playlistTracks
   };
 }
 
