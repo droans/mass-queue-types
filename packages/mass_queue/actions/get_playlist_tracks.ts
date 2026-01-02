@@ -1,10 +1,10 @@
-import { baseMassQueueServiceWithResponseSchema, getCollectionDataPartialSchema, getTracksServiceResponse } from "../utils.js";
+import { baseMassQueueServiceWithResponseSchema, getCollectionDataPartialServiceSchema, getTracksServiceResponse } from "../utils.js";
 
 export type getPlaylistTracksServiceResponse = getTracksServiceResponse;
 
-export type getPlaylistTracksPartialSchema = getCollectionDataPartialSchema
+export type getPlaylistTracksPartialServiceSchema = getCollectionDataPartialServiceSchema
 
-export interface getPlaylistTracksSchema extends baseMassQueueServiceWithResponseSchema {
+export interface getPlaylistTracksServiceSchema extends baseMassQueueServiceWithResponseSchema {
   service: 'get_playlist_tracks';
-  service_data: getPlaylistTracksPartialSchema;
+  service_data: getPlaylistTracksPartialServiceSchema;
 }

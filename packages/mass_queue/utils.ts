@@ -31,7 +31,7 @@ export interface getTracksServiceResponse {
   };
 }
 
-export interface getCollectionDataPartialSchema {
+export interface getCollectionDataPartialServiceSchema {
   uri: string;
   config_entry_id: string;
 }
