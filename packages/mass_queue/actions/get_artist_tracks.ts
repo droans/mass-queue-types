@@ -5,6 +5,6 @@ export type getArtistTracksServiceResponse = getTracksServiceResponse;
 export type getArtistTracksPartialServiceSchema = getCollectionDataPartialServiceSchema
 
 export interface getArtistTracksServiceSchema extends baseMassQueueServiceWithResponseSchema {
-  service: 'get_artust_tracks';
+  service: 'get_artist_tracks';
   service_data: getArtistTracksPartialServiceSchema;
 }
