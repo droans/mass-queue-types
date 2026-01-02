@@ -21,6 +21,7 @@ export interface getPlaylistTracksServiceResponse {
 export interface getPlaylistTracksPartialSchema {
   uri: string;
   config_entry_id: string;
+  page?: number;
 }
 
 export interface getPlaylistTracksServiceSchema
