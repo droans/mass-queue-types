@@ -21,6 +21,7 @@ export interface Track {
   media_image: string;
   local_image_encoded?: string;
   favorite: boolean;
+  duration?: number;
 }
 
 export type Tracks = Track[];
