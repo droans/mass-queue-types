@@ -1,7 +1,7 @@
 import { Album } from "../types/media-items.js";
 import { baseMassQueueServiceWithResponseSchema, getCollectionDataPartialServiceSchema } from "../utils.js";
 
-export type getAlbumServiceResponse = Album;
+export type getAlbumServiceResponse = {response: Album};
 
 export type getAlbumPartialServiceSchema = getCollectionDataPartialServiceSchema
 

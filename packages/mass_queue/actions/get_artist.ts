@@ -1,7 +1,7 @@
 import { Artist } from "../types/media-items.js";
 import { baseMassQueueServiceWithResponseSchema, getCollectionDataPartialServiceSchema } from "../utils.js";
 
-export type getArtistServiceResponse = Artist;
+export type getArtistServiceResponse = {response: Artist};
 
 export type getArtistPartialServiceSchema = getCollectionDataPartialServiceSchema
 
