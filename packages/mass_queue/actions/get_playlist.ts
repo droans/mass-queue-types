@@ -5,7 +5,7 @@ export type getPlaylistServiceResponse = {response: Playlist};
 
 export type getPlaylistPartialSchema = getCollectionDataPartialServiceSchema
 
-export interface getPlaylistSchema extends baseMassQueueServiceWithResponseSchema {
+export interface getPlaylistServiceSchema extends baseMassQueueServiceWithResponseSchema {
   service: 'get_playlist';
   service_data: getPlaylistPartialSchema;
 }
