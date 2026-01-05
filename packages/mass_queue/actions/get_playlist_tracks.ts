@@ -2,7 +2,9 @@ import { baseMassQueueServiceWithResponseSchema, getCollectionDataPartialService
 
 export type getPlaylistTracksServiceResponse = getTracksServiceResponse;
 
-export type getPlaylistTracksPartialServiceSchema = getCollectionDataPartialServiceSchema
+export interface getPlaylistTracksPartialServiceSchema extends getCollectionDataPartialServiceSchema {
+  position: number
+}
 
 export interface getPlaylistTracksServiceSchema extends baseMassQueueServiceWithResponseSchema {
   service: 'get_playlist_tracks';
