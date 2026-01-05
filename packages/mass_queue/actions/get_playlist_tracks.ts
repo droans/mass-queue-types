@@ -1,7 +1,14 @@
-import { baseMassQueueServiceWithResponseSchema, getCollectionDataServiceData, getTracksServiceResponse } from "../utils.js";
+import { baseMassQueueServiceWithResponseSchema, getCollectionDataServiceData, getTracksServiceResponse, Track } from "../utils.js";
 
-export interface getPlaylistTracksServiceResponse extends getTracksServiceResponse {
-  position: number
+
+export interface PlaylistTrack extends Track {
+  position: number;
+}
+
+export interface getPlaylistTracksServiceResponse {
+  response: {
+    tracks: PlaylistTrack[];
+  }  
 }
 
 export type getPlaylistTracksServiceData = getCollectionDataServiceData;
