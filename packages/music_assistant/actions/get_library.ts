@@ -12,7 +12,7 @@ export interface getLibraryServiceResponse {
   response: getLibraryPartialServiceResponse
 }
 
-export interface getLibraryPartialSchema {
+export interface getLibraryServiceData {
   config_entry_id: string;
   media_type: MediaTypes;
   favorite?: boolean;
@@ -26,5 +26,5 @@ export interface getLibraryPartialSchema {
 export interface getLibraryServiceSchema
   extends baseMusicAssistantServiceWithResponseSchema {
   service: "get_library"
-  service_data: getLibraryPartialSchema  
+  service_data: getLibraryServiceData  
 }

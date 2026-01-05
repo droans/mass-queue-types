@@ -1,7 +1,7 @@
 import { EnqueueModes, MediaTypes } from "../types.js";
 import { baseMusicAssistantServiceWithTargetSchema } from "../utils.js";
 
-export interface playMediaPartialSchema {
+export interface playMediaServiceData {
   media_id: string;
   media_type?: MediaTypes;
   artist?: string;
@@ -13,5 +13,5 @@ export interface playMediaPartialSchema {
 export interface playMediaServiceSchema
   extends baseMusicAssistantServiceWithTargetSchema {
   service: "play_media"
-  service_data: playMediaPartialSchema
+  service_data: playMediaServiceData
 }

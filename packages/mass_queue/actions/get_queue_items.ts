@@ -17,13 +17,13 @@ export interface queueItem {
 
 export type queueItems = queueItem[];
 
-type getQueueItemsPartialResponse = Record<string, queueItems>;
+type getQueueItemsPartialServiceResponse = Record<string, queueItems>;
 
 export interface getQueueItemsServiceResponse {
-  response: getQueueItemsPartialResponse;
+  response: getQueueItemsPartialServiceResponse;
 }
 
-export interface getQueueItemsPartialSchema {
+export interface getQueueItemsServiceData {
   entity: string;
   limit_before?: number;
   limit_after?: number;
@@ -34,5 +34,5 @@ export interface getQueueItemsPartialSchema {
 export interface getQueueItemsServiceSchema
   extends baseMassQueueServiceWithResponseSchema {
   service: "get_queue_items";
-  service_data: getQueueItemsPartialSchema;
+  service_data: getQueueItemsServiceData;
 }

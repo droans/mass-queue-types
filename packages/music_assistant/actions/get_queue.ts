@@ -20,12 +20,12 @@ export interface getQueueServiceResponse {
   response: getQueueServiceEntitiesResponse;
 }
 
-export interface getQueuePartialSchema {
+export interface getQueueServiceData {
   entity_id: string;
 }
 
 export interface getQueueServiceSchema
   extends baseMusicAssistantServiceWithResponseSchema {
   service: "get_queue"
-  service_data: getQueuePartialSchema
+  service_data: getQueueServiceData
 }

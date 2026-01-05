@@ -14,7 +14,7 @@ export interface searchServiceResponse {
   response: searchPartialServiceResponse
 }
 
-export interface searchPartialSchema {
+export interface searchServiceData {
   config_entry_id: string;
   name: string;
   media_type?: MediaTypes[];
@@ -27,5 +27,5 @@ export interface searchPartialSchema {
 export interface searchServiceSchema
   extends baseMusicAssistantServiceWithResponseSchema {
   service: "search"
-  service_data: searchPartialSchema  
+  service_data: searchServiceData  
 }

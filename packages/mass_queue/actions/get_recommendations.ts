@@ -30,12 +30,12 @@ export interface getRecommendationsServiceResponse {
   response: getRecommendationsPartialServiceResponse;
 }
 
-export interface getRecommendationsPartialSchema {
+export interface getRecommendationsServiceData {
   entity: string;
 }
 
 export interface getRecommendationsServiceSchema
   extends baseMassQueueServiceWithResponseSchema {
   service: "get_recommendations";
-  service_data: getRecommendationsPartialSchema;
+  service_data: getRecommendationsServiceData;
 }

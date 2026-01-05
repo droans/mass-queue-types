@@ -45,13 +45,13 @@ Typescript types and interfaces for the [Music Assistant Queue Actions](https://
 # Usage
 
 ## Service Schemas
-All service schemas are available as PARTIAL (service data only) or FULL (entire service call) schemas. Full will only work when calling `hass.callWS` due to the function schemas.
+All service schemas are available as ServiceData or FULL (entire service call) schemas. Full will only work when calling `hass.callWS` due to the function schemas.
 
 **Use FULL when...**
 * You are calling `hass.callWS`.
 * You want complete validation, including the `type`, `domain`, `service`, and (if applicable), `return_response`.
 
-**Use PARTIAL when...**
+**Use ServiceData only when...**
 * You are calling `hass.callService`.
 * You only want to validate the service data being passed.
 

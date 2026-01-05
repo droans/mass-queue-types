@@ -8,12 +8,12 @@ export interface getGroupVolumeServiceResponse {
   response: getGroupVolumePartialServiceResponse;
 }
 
-export interface getGroupVolumePartialSchema {
+export interface getGroupVolumeServiceData {
   entity: string;
 }
 
 export interface getGroupVolumeServiceSchema
   extends baseMassQueueServiceWithResponseSchema {
   service: "get_group_volume";
-  service_data: getGroupVolumePartialSchema;
+  service_data: getGroupVolumeServiceData;
 }

@@ -9,7 +9,7 @@ export interface baseMassQueueServiceWithResponseSchema
   return_response: true;
 }
 
-export interface queueItemPartialSchema {
+export interface queueItemServiceData {
   entity: string;
   queue_item_id: string;
 }
@@ -32,7 +32,7 @@ export interface getTracksServiceResponse {
   };
 }
 
-export interface getCollectionDataPartialServiceSchema {
+export interface getCollectionDataServiceData {
   uri: string;
   config_entry_id: string;
 }
