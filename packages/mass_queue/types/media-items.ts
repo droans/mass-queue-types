@@ -54,6 +54,8 @@ export interface PodcastEpisode extends Omit<MediaItem, 'media_type'> {
   media_type: 'podcast_episode';
   fully_played: boolean | null;
   resume_position_ms: number | null;
+  podcast: Podcast;
+  duration: number;  
 }
 
 type externalIds = [string, string][];
