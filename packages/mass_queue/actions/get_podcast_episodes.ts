@@ -1,6 +1,10 @@
-import { baseMassQueueServiceWithResponseSchema, getCollectionDataServiceData, getTracksServiceResponse } from "../utils.js";
+import { baseMassQueueServiceWithResponseSchema, getCollectionDataServiceData, Track } from "../utils.js";
 
-export type getPodcastEpisodesServiceRespnse = getTracksServiceResponse;
+export interface getPodcastEpisodesServiceRespnse {
+  response: {
+    episodes: Track[];
+  }
+};
 
 export type getPodcastEpisodeServiceData = getCollectionDataServiceData;
 
