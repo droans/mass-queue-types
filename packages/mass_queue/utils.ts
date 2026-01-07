@@ -36,3 +36,7 @@ export interface getCollectionDataServiceData {
   uri: string;
   config_entry_id: string;
 }
+
+export interface getCollectionItemsServiceData extends getCollectionDataServiceData {
+  page?: number;
+}

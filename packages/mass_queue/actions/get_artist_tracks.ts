@@ -1,8 +1,8 @@
-import { baseMassQueueServiceWithResponseSchema, getCollectionDataServiceData, getTracksServiceResponse } from "../utils.js";
+import { baseMassQueueServiceWithResponseSchema, getCollectionItemsServiceData, getTracksServiceResponse } from "../utils.js";
 
 export type getArtistTracksServiceResponse = getTracksServiceResponse;
 
-export type getArtistTracksServiceData = getCollectionDataServiceData
+export type getArtistTracksServiceData = getCollectionItemsServiceData
 
 export interface getArtistTracksServiceSchema extends baseMassQueueServiceWithResponseSchema {
   service: 'get_artist_tracks';
