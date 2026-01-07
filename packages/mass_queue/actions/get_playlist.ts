@@ -1,7 +1,7 @@
 import { Playlist } from "../types/media-items.js";
 import { baseMassQueueServiceWithResponseSchema, getCollectionDataServiceData } from "../utils.js";
 
-export type getPlaylistServiceResponse = {response: Playlist};
+export interface getPlaylistServiceResponse {response: Playlist};
 
 export type getPlaylistServiceData = getCollectionDataServiceData
 
