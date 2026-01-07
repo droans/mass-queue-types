@@ -1,4 +1,4 @@
-import { baseMassQueueServiceWithResponseSchema, getCollectionDataServiceData, getTracksServiceResponse, Track } from "../utils.js";
+import { baseMassQueueServiceWithResponseSchema, getCollectionDataServiceData, Track } from "../utils.js";
 
 
 export interface PlaylistTrack extends Track {
