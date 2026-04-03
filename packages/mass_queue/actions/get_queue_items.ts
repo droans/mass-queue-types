@@ -27,7 +27,7 @@ export interface getQueueItemsServiceData {
   entity: string;
   limit_before?: number;
   limit_after?: number;
-  limt?: number;
+  limit?: number;
   offset?: number;
 }
 
