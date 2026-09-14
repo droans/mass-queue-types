@@ -1,9 +1,9 @@
 {
   "compilerOptions": {
-    "target": "ES2021",
+    "target": "ES2024",
     "module": "esnext",
-    "moduleResolution": "node",
-    "lib": ["es2021", "dom", "dom.iterable"],
+    "moduleResolution": "bundler",
+    "lib": ["es2024", "dom", "dom.iterable"],
     "noEmit": true,
     "noUnusedParameters": true,
     "noImplicitReturns": true,
