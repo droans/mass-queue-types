@@ -55,7 +55,7 @@ export interface PodcastEpisode extends Omit<MediaItem, 'media_type'> {
   fully_played: boolean | null;
   resume_position_ms: number | null;
   podcast: Podcast;
-  duration: number;  
+  duration: number;
 }
 
 type externalIds = [string, string][];
@@ -73,7 +73,7 @@ interface MediaItemBase {
   media_type: MediaType;
 }
 
-type MediaImageType = 
+type MediaImageType =
   "thumb"
   | "landscape"
   | "fanart"
@@ -85,7 +85,7 @@ type MediaImageType =
   | "discart"
   | "other"
 
-type AlbumType = 
+export type AlbumType =
   "album"
   | "single"
   | "live"
