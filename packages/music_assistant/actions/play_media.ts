@@ -8,6 +8,7 @@ export interface playMediaServiceData {
   album?: string;
   enqueue?: EnqueueModes;
   radio_mode?: boolean;
+  username?: string;
 }
 
 export interface playMediaServiceSchema

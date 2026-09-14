@@ -22,10 +22,11 @@ export interface searchServiceData {
   album?: string;
   limit?: number;
   library_only?: boolean;
+  username?: string;
 }
 
 export interface searchServiceSchema
   extends baseMusicAssistantServiceWithResponseSchema {
   service: "search"
-  service_data: searchServiceData  
+  service_data: searchServiceData
 }
