@@ -3,7 +3,6 @@ import { baseMassQueueServiceWithResponseSchema, getCollectionItemsServiceData, 
 
 export interface PlaylistTrack extends Track {
   position: number;
-  release_date: string;
 }
 
 export interface getPlaylistTracksServiceResponse {

@@ -1,7 +1,7 @@
 export interface encodeImagesWSServiceSchema {
   type: "mass_queue/encode_images";
   entity_id: string;
-  images: string[];
+  images: imageData[];
 }
 
 export interface imageData {
