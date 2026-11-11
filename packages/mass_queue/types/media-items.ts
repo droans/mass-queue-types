@@ -117,7 +117,7 @@ interface MediaItemMetadata {
   description: string | null;
   review: string | null;
   explicit: boolean | null;
-  images: MediaItemImage | null;
+  images: MediaItemImage[] | null;
   grouping: string | null;
   genres: string[] | null;
   mood: string | null;
